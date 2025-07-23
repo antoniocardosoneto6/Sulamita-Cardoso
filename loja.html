@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja - S&S Aviamentos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="background">
+  </div>
+  <header>
+    <div class="logooo"><img src="img/logo_toizin.png" alt=""></div>
+  </header>
+
+  <main>
+    <section class="produtos">
+      <div class="produto" data-nome="Agulha bambu" data-preco="66.00">
+        <img src="img/agulh_bambu.png" alt="Agulha bambu"/>
+        <h3>Agulhas Cabo de Bambu</h3>
+        <p>Alta resistência com 12 Unidades</p>
+        <span>R$ 66,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      <div class="produto" data-nome="Botões Sortidos" data-preco="30.00">
+        <img src="img/botoes.png" alt="Botões"/>
+        <h3>Botões Sortidos</h3>
+        <p>Pacote com 144 unidades</p>
+        <span>R$ 30,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      
+      <div class="produto" data-nome="Elástico algodão" data-preco="30.00">
+        <img src="img/elastico_algodao.png" alt="Elástico"/>
+        <h3>Botões Sortidos</h3>
+        <p>Rolo de 100 metros</p>
+        <span>R$ 30,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      
+      <div class="produto" data-nome="Elástico" data-preco="30.00">
+        <img src="img/elastico_light.png" alt="Elástico"/>
+        <h3>Botões Sortidos</h3>
+        <p>Peças 25 metros</p>
+        <span>R$ 30,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      
+      <div class="produto" data-nome="Tesoura de Arremate" data-preco="30.00">
+        <img src="img/tesoura_arremate.png" alt="Botões"/>
+        <h3>Tesouras de excelente qualidade com 12 unidades</h3>
+        <p>Pacote com 144 unidades</p>
+        <span>R$ 30,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      
+      <div class="produto" data-nome="Giz de Alfaiate" data-preco="30.00">
+        <img src="img/lapis_giz.png" alt="Botões"/>
+        <h3>Giz e Lápis de primeira qualidade</h3>
+        <p>Pacote com 12 unidades</p>
+        <span>R$ 30,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      
+      <div class="produto" data-nome="Bobinas" data-preco="12.00">
+        <img src="img/bobinas.png" alt="Botões"/>
+        <h3>Bobinas Sortidos</h3>
+        <p>Pacote com 25 unidades</p>
+        <span>R$ 12,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      
+      <div class="produto" data-nome="Agulheiro" data-preco="30.00">
+        <img src="img/agulheiro_1218.png" alt="Botões"/>
+        <h3>Agulheiro 1218</h3>
+        <p>Pacote com 12 unidades</p>
+        <span>R$ 30,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      
+      <div class="produto" data-nome="Agulhas de aluminio" data-preco="36.00">
+        <img src="img/agulha_aluminio.png" alt="Botões"/>
+        <h3>Agulhas de Aluminio</h3>
+        <p>Pacote com 12 unidades</p>
+        <span>R$ 36,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      
+      <div class="produto" data-nome="Fita Métrica" data-preco="30.00">
+        <img src="img/fita_metrica.png" alt="Botões"/>
+        <h3>Fita M´trica Cores Sortida</h3>
+        <p>Pacote com 12 unidades</p>
+        <span>R$ 30,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      
+      <div class="produto" data-nome="Agulha Curva" data-preco="15.00">
+        <img src="img/agulha_curva.png" alt="Botões"/>
+        <h3>Agulha Curva</h3>
+        <p>Pacote com 06 unidades</p>
+        <span>R$ 15,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+
+      
+      <div class="produto" data-nome="Alfinete Vidro" data-preco="30.00">
+        <img src="img/alfinete_vidro.png" alt="Botões"/>
+        <h3>Alfinete Cabeça de Vidro</h3>
+        <p>Pacote com 12 unidades</p>
+        <span>R$ 30,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+      
+      <div class="produto" data-nome="Agulha de Cego" data-preco="30.00">
+        <img src="img/agulheiro_dv.png" alt="Botões"/>
+        <h3>Botões Sortidos</h3>
+        <p>Pacote com 12 unidades</p>
+        <span>R$ 30,00</span>
+        <button onclick="adicionarCarrinho(this)">Adicionar</button>
+      </div>
+
+
+    </section>
+
+    <aside class="carrinho">
+      <h3>🛒 Carrinho</h3>
+      <ul id="lista-carrinho"></ul>
+      <p><strong>Total:</strong> R$ <span id="total">0.00</span></p>
+      <a id="finalizar" href="#" target="_blank">Enviar para o WhatsApp</a>
+      <br>
+      <img src="Voltar.png" alt="Voltar" style="width: 50px; cursor: pointer;" onclick="window.location.href='index.html';">
+
+
+    </aside>
+  </main>
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">
+                        <span class="text-orange">S&S</span>
+                        <span class="text-white">Aviamentos</span>
+                    </h3>
+                    <p class="footer-description">
+                       <Strong>Inovando seu jeito de costurar!</Strong> 
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">
+                        <i data-lucide="clock"></i>
+                        Horários
+                    </h4>
+                    <ul class="footer-list">
+                        <li><span>Segunda - Sexta:</span><span>9h às 18h</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-list">
+                        <li><a href="#" onclick="selectCategory('Zíperes')"><img class="emote" src="ziper.png" alt=""> Zípers</a></li>
+                        <li><a href="#" onclick="selectCategory('Elásticos')"><img class="emote" src="elastico.png" alt=""> Elásticos</a></li>
+                        <li><a href="#" onclick="selectCategory('Fitas')"><img class="emote" src="laço.png" alt=""> Fitas</a></li>
+                        <li><a href="#" onclick="selectCategory('Velcros')">🪢 Velcros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">
+                        <i data-lucide="map-pin"></i>
+                        Contato
+                    </h4>
+                    <ul class="footer-list">
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <div>Quadra 46 Casa 17</div>
+                                <div>Etapa B, Valparaíso - GO</div>
+                            </div>
+                        </li>
+                        <li>
+                            
+                            <a href="https://portfoliocardosoneto.netlify.app//" target="_blank">Contato</a>
+                        </li>
+                        <li>
+                           
+                            <a href="tel:+61981537457">(61)981537457</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 S&SAVIAMENTOS. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script>
+    const carrinho = [];
+    function adicionarCarrinho(btn) {
+      const produto = btn.parentElement;
+      const nome = produto.dataset.nome;
+      const preco = parseFloat(produto.dataset.preco);
+      carrinho.push({ nome, preco });
+      atualizarCarrinho();
+    }
+
+    function atualizarCarrinho() {
+      const lista = document.getElementById('lista-carrinho');
+      const totalSpan = document.getElementById('total');
+      const link = document.getElementById('finalizar');
+      lista.innerHTML = '';
+      let total = 0;
+      let mensagem = 'Olá! Gostaria de comprar os seguintes produtos:%0A';
+
+      carrinho.forEach(item => {
+        total += item.preco;
+        lista.innerHTML += `<li>${item.nome} - R$ ${item.preco.toFixed(2)}</li>`;
+        mensagem += `• ${item.nome} - R$ ${item.preco.toFixed(2)}%0A`;
+      });
+
+      totalSpan.innerText = total.toFixed(2);
+      mensagem += `%0ATotal: R$ ${total.toFixed(2)}`;
+      link.href = `https://wa.me/5561981537457?text=${mensagem}`;
+    }
+  </script>
+</body>
+</html>
